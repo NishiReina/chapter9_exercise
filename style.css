@@ -15,6 +15,8 @@ main {
     margin: 50px auto;
     display: flex;
     justify-content: center;
+    /* 解答ではここにjustify-content: center;がないなぜ？ */
+    /* ないと、子要素はブロック要素なので、横に並ばないのでは？ */
 }
 
 .step-box{
@@ -67,4 +69,37 @@ footer{
     width: 100%;
     height: 50px;
     background-color: #AAAAAA;
+}
+
+@media screen and (max-width: 425px) {
+
+    header{
+        width: 100%;
+    }
+
+    main{
+        width: 100%;
+        display: block;
+    }
+
+    .step-box{
+        width: 90%;
+        margin: 20px 10%;
+    }
+
+    .step-img1{
+        width: 100%;
+    }
+
+    .step-img2{
+        width: 100%;
+    }
+
+    .step-img3{
+        width: 100%;
+    }
+
+    footer{
+        width: 100%;
+    }
 }
